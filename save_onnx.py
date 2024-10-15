@@ -1,6 +1,9 @@
 import torch
 import torch.nn
 import onnx
+# torch.save(model.state_dict(), save_path) # 保存模型权重
+# torch.save(model, save_path)              # 保存模型结构&权重
+
 model_name=""
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 # device = torch.device('cpu')
